@@ -1,0 +1,52 @@
+body{
+    width: 100%;
+    margin: 0px; 
+    padding: 0px;
+    font-family: Roboto;
+    color: #ffffff;
+   }
+   @font-face{
+    font-family: "Roboto";
+    src: url(../font/Roboto-Regular.ttf)format("truetype");
+    }
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: stretch;
+}
+.contenedor div {
+    padding: 1em;
+}
+
+a:link , a:visited { text-decoration:none; color: #ffffff;}
+a:hover { color: #c01515;}
+ul.enlaces_1 li{ display: inline-block; font-size: 13px; position: relative; }
+ul.info li { display: inline-block ; padding-right: 20px; position: relative; top: 6px; }
+
+.logo{
+    background: url(../img/logo.png) center no-repeat;
+    background-size: 320px;
+}
+.cuenta{
+    background: url(../img/slogan.png) center no-repeat;
+    background-size: 150px;
+}
+.busqueda{
+    background: url(../img/busqueda.png) center no-repeat;
+    background-size: 280px;
+}
+
+.enlaces{
+    grid-column: 1/4;
+    background-color: #262f72;
+    padding-bottom: 5px;
+}
+
+.down{
+    grid-column: 1/4;
+    background-color: #c01515;
+}
+
